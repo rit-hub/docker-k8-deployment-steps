@@ -21,6 +21,7 @@ kubectl apply -f db.yaml
 kubectl apply -f app.yaml
 
 kubectl get pods
+kubectl get pods -o wide
 kubectl get svc
 ```
 
