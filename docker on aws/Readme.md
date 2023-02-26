@@ -16,3 +16,14 @@ go to browser and type -
 e.g.
 http://34.229.181.52:7090/swagger-ui.html
 ```
+
+## check postgreSQL database tables on docker
+
+```
+docker exec -it s3-postgresqldb-1 sh
+psql -U postgres
+\l
+\c HomeInsuranceDatabase
+\dt
+select * from admin;
+```
